@@ -12,7 +12,7 @@
         {
             "id": "experience-345",
             "type": "text",
-            "question": "What's your programming experiece?",
+            "question": "What's your programming experience?",
             "validation": {
                 "type": "length",
                 "min": 5
