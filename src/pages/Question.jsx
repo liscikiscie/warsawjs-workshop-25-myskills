@@ -6,12 +6,17 @@ const Question = ( {
                        name = '',
                        question = '',
                        id,
+                       onValueChange,
                        validation
                    } = {} ) => {
     return (
         <li className="list-element">
             {question}
-            <TextQuestion/>
+            <TextQuestion
+                {...validation}
+                id={id}
+                onValueChange={onValueChange}
+            />
         </li>
 
     );

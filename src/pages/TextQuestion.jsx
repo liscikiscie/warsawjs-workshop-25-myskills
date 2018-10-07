@@ -1,13 +1,15 @@
 import React from 'react';
 
 const TextQuestion = ( {
-                           name = '',
-                           question = '',
-                           id,
-                           validation
+                           onValueChange,
+                           id
                        } = {} ) => {
     return (
-        <input type="text" value="" placeholder="Write your answer right here"/>
+        <input
+            type="text"
+            placeholder="Write your answer right here"
+            onKeyPress={onValueChange(id)}
+        />
     );
 };
 

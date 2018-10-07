@@ -1,16 +1,21 @@
 import React from 'react';
-import db from '../dummy/db.json'
 import Question from './Question.jsx'
 
 const Questions = (
     {
-        questions = []
+        questions = [],
+        onValueChange
     } = {}
 ) => {
     return (
         <ol className="questions-list">
-            {db.questions.map(question =>
-                <Question {...question} key={question.id}/>
+            {questions.map(question =>
+                <Question
+                    {...question}
+                    key={question.id}
+                    // id={question.id}
+                    onValueChange={onValueChange}
+                />
             )}
         </ol>
     );
