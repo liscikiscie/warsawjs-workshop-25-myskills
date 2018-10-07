@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Title from './pages/Title';
-import List from './pages/List';
+import Title from './pages/Title.jsx';
+import QuestionView from './pages/QuestionView.jsx';
 import './App.css';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
         return (
             <div className="App">
                 <Title/>
-                <List/>
+                <QuestionView/>
             </div>
         );
     }
