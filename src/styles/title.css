@@ -1,0 +1,16 @@
+.App-title {
+}
+.App-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    width: 50%;
+}
+img {
+    height: 150px;
+    width: 250px;
+}
